@@ -49,14 +49,4 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
-    // 当触发器与物体碰撞时调用
-    void OnTriggerEnter(Collider other)
-    {
-        // 如果触发的是 Player
-        if (other.gameObject.CompareTag("Player"))
-        {
-            // 打印到控制台
-            Debug.Log("Enemy triggered by Player!");
-        }
-    }
 }

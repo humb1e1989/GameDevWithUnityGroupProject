@@ -3,16 +3,18 @@
 public class EnemyCollision : MonoBehaviour
 {
     public FadeToBlack fadeToBlackScript;  // 引用FadeToBlack脚本
-    public AudioClip soundClip;            // 要播放的声音文件（拖拽到 Inspector）
+    public AudioClip soundClip;            // 要播放的声音文件
     public float soundVolume = 1.0f;       // 调整音量（默认为 1.0）
+
+    private bool hasTriggered = false;     // 标记是否已经触发
 
     // 当Collider进入触发区时
     private void OnTriggerEnter(Collider other)
     {
-        // 确保触发的是Player
-        if (other.CompareTag("Player"))
+        // 确保触发的是Player，并且只触发一次
+        if (!hasTriggered && other.CompareTag("Player"))
         {
-            // 打印调试信息
+            hasTriggered = true;  // 标记为已触发
             Debug.Log("与玩家接触，执行渐变黑屏");
 
             // 播放声音

@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 147963822}
   - component: {fileID: 147963823}
   m_Layer: 0
-  m_Name: enemy
+  m_Name: patrolingGhost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3139,7 +3139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1590210614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3797,8 +3797,8 @@ GameObject:
   - component: {fileID: 1908338042}
   - component: {fileID: 1908338045}
   - component: {fileID: 1908338044}
-  - component: {fileID: 1908338043}
   - component: {fileID: 1908338046}
+  - component: {fileID: 1908338047}
   m_Layer: 0
   m_Name: collider
   m_TagString: Untagged
@@ -3821,29 +3821,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 147963821}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1908338043
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908338041}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1908338044
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3912,6 +3889,28 @@ MonoBehaviour:
   fadeToBlackScript: {fileID: 769946992}
   soundClip: {fileID: 8300000, guid: 6fe533dbaa3c12643909d3c50138ecf8, type: 3}
   soundVolume: 1
+--- !u!64 &1908338047
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908338041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1938345643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a4f5548c5b6f28940b363b3c91913bbc, type: 3}
@@ -4425,10 +4424,10 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1141331235}
   - {fileID: 2086832327}
-  - {fileID: 1590210619}
   - {fileID: 933819839}
   - {fileID: 838546266}
   - {fileID: 1900297736}
   - {fileID: 2007034819}
   - {fileID: 108991260}
+  - {fileID: 1590210619}
   - {fileID: 147963821}

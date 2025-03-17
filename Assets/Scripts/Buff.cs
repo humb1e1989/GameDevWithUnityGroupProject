@@ -1,0 +1,40 @@
+﻿using UnityEngine;
+
+public class Buff : MonoBehaviour
+{
+    public enum BuffType { IncreaseSize, DecreaseSize }
+    public BuffType buffType;
+    public float rotationSpeed = 30f; // 旋转速度
+
+    void Update()
+    {
+        // 缓慢旋转
+        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayerController playerController = other.GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                ApplyBuff(playerController);
+                Destroy(gameObject); // Buff消失
+            }
+        }
+    }
+
+    void ApplyBuff(PlayerController playerController)
+    {
+        switch (buffType)
+        {
+            case BuffType.IncreaseSize:
+                playerController.transform.localScale *= 3f; // 变为3倍大
+                break;
+            case BuffType.DecreaseSize:
+                playerController.transform.localScale *= 0.5f; // 变为0.5倍大
+                break;
+        }
+    }
+}

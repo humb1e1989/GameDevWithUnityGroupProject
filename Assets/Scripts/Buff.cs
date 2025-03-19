@@ -1,10 +1,22 @@
 ﻿using UnityEngine;
+using System.Collections;  // 导入协程支持
 
 public class Buff : MonoBehaviour
 {
     public enum BuffType { IncreaseSize, DecreaseSize, EnableDash }
     public BuffType buffType;
     public float rotationSpeed = 30f; // 旋转速度
+
+    private Vector3 originalSize; // 存储玩家的原始大小
+
+    void Start()
+    {
+        // 存储玩家的原始大小和冲刺状态
+        if (buffType == BuffType.IncreaseSize || buffType == BuffType.DecreaseSize)
+        {
+            originalSize = transform.localScale;
+        }
+    }
 
     void Update()
     {
@@ -40,4 +52,5 @@ public class Buff : MonoBehaviour
                 break;
         }
     }
+
 }

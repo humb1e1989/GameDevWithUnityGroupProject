@@ -105,4 +105,9 @@ public class PlayerController : MonoBehaviour
     {
         canDash = true;
     }
+
+    public void DisableDash()
+    {
+        canDash = false;
+    }
 }

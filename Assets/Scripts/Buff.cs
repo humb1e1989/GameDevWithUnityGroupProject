@@ -2,7 +2,7 @@
 
 public class Buff : MonoBehaviour
 {
-    public enum BuffType { IncreaseSize, DecreaseSize }
+    public enum BuffType { IncreaseSize, DecreaseSize, EnableDash }
     public BuffType buffType;
     public float rotationSpeed = 30f; // 旋转速度
 
@@ -34,6 +34,9 @@ public class Buff : MonoBehaviour
                 break;
             case BuffType.DecreaseSize:
                 playerController.transform.localScale *= 0.5f; // 变为0.5倍大
+                break;
+            case BuffType.EnableDash:
+                playerController.EnableDash(); // 激活冲刺功能
                 break;
         }
     }

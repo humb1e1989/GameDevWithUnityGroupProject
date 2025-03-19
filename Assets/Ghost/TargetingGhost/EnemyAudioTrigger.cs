@@ -82,16 +82,5 @@ public class EnemyAudioTrigger : MonoBehaviour
         {
             hasPlayed = false;
         }
-        if (audioSource.isPlaying == false && hasPlayed && currentClipIndex == 1)
-        {
-            // 等待第二段音效播放完毕后退出游戏
-            Debug.Log("Second audio clip finished, quitting game...");
-
-#if UNITY_EDITOR
-            EditorApplication.isPlaying = false;  // 在编辑器中停止播放
-#else
-                Application.Quit();  // 在构建后的版本中退出游戏
-#endif
-        }
     }
 }

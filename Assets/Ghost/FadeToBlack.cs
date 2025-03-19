@@ -13,11 +13,18 @@ public class FadeToBlack : MonoBehaviour
         blackScreenImage.color = new Color(0, 0, 0, 0);  // 透明
     }
 
+    // 开始渐变黑屏
     public void StartFadeToBlack()
     {
-        Debug.Log("渐变开始");
-        // 开始渐变黑屏
+        Debug.Log("渐变黑屏开始");
         StartCoroutine(FadeInBlackScreen());
+    }
+
+    // 开始渐变淡出黑屏
+    public void StartFadeOut()
+    {
+        Debug.Log("渐变消失开始");
+        StartCoroutine(FadeOutBlackScreen());
     }
 
     private IEnumerator FadeInBlackScreen()
@@ -27,7 +34,6 @@ public class FadeToBlack : MonoBehaviour
         Color startColor = blackScreenImage.color; // 初始颜色（透明）
         Color endColor = new Color(0, 0, 0, 1);    // 目标颜色（黑色）
 
-        // 渐变过程
         while (timer < duration)
         {
             timer += Time.deltaTime;
@@ -35,7 +41,23 @@ public class FadeToBlack : MonoBehaviour
             yield return null;
         }
 
-        // 确保最终是完全黑色
-        blackScreenImage.color = endColor;
+        blackScreenImage.color = endColor; // 确保完全变黑
+    }
+
+    private IEnumerator FadeOutBlackScreen()
+    {
+        float duration = 2f;  // 渐变时间（秒）
+        float timer = 0f;
+        Color startColor = blackScreenImage.color; // 初始颜色（黑色）
+        Color endColor = new Color(0, 0, 0, 0);    // 目标颜色（透明）
+
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            blackScreenImage.color = Color.Lerp(startColor, endColor, timer / duration);
+            yield return null;
+        }
+
+        blackScreenImage.color = endColor; // 确保完全透明
     }
 }

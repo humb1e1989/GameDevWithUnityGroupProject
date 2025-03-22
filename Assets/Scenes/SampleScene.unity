@@ -3526,7 +3526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02075752f9587b4aab94731d40d1a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRigidbody: {fileID: 0}
+  playerRigidbody: {fileID: 2086832329}
   moveSpeed: 15
   jumpForce: 10
   dashMultiplier: 3

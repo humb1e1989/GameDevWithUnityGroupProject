@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-using System.Collections;  // 导入协程支持
+using System.Collections;  // 用于协程
 
 public class Buff : MonoBehaviour
 {
-    public enum BuffType { IncreaseSize, DecreaseSize, EnableDash }
+    public enum BuffType { IncreaseSize, DecreaseSize, EnableDash, FreezeEnemy }
     public BuffType buffType;
     public float rotationSpeed = 30f; // 旋转速度
 
@@ -11,7 +11,6 @@ public class Buff : MonoBehaviour
 
     void Start()
     {
-        // 存储玩家的原始大小和冲刺状态
         if (buffType == BuffType.IncreaseSize || buffType == BuffType.DecreaseSize)
         {
             originalSize = transform.localScale;
@@ -20,7 +19,7 @@ public class Buff : MonoBehaviour
 
     void Update()
     {
-        // 缓慢旋转
+        // 旋转 Buff 物品
         transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
     }
 
@@ -42,15 +41,30 @@ public class Buff : MonoBehaviour
         switch (buffType)
         {
             case BuffType.IncreaseSize:
-                playerController.transform.localScale *= 3f; // 变为3倍大
+                playerController.transform.localScale *= 3f;
                 break;
             case BuffType.DecreaseSize:
-                playerController.transform.localScale *= 0.5f; // 变为0.5倍大
+                playerController.transform.localScale *= 0.5f;
                 break;
             case BuffType.EnableDash:
-                playerController.EnableDash(); // 激活冲刺功能
+                playerController.EnableDash();
+                break;
+            case BuffType.FreezeEnemy:
+                FreezeEnemies(); // 冻结所有敌人
                 break;
         }
     }
 
+    void FreezeEnemies()
+    {
+        GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost"); // 查找所有 "Ghost" 标签的对象
+        foreach (GameObject ghost in ghosts)
+        {
+            ChaseTarget chaseTarget = ghost.GetComponent<ChaseTarget>(); // 获取 ChaseTarget 组件
+            if (chaseTarget != null)
+            {
+                chaseTarget.Freeze(15f); // 让鬼冻结15秒
+            }
+        }
+    }
 }

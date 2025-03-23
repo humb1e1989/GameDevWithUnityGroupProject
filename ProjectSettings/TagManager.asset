@@ -8,6 +8,10 @@ TagManager:
   - Red
   - Green
   - Blue
+  - Ghost
+  - Fire
+  - Coins
+  - Coin
   layers:
   - Default
   - TransparentFX

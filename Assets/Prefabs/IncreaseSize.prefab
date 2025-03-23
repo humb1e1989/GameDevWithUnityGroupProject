@@ -301,6 +301,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3344833113314032799}
     m_Modifications:
+    - target: {fileID: 7373210123951202687, guid: 4ebd47e5a47079141940be5854bc9ea0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7492211152876757120, guid: 4ebd47e5a47079141940be5854bc9ea0, type: 3}
       propertyPath: m_Name
       value: LongPotion_1

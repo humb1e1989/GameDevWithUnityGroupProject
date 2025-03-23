@@ -10,8 +10,8 @@ public class MinMapCameraManager : MonoBehaviour
     [SerializeField] private float[] floorHeights;     // 各层的Y轴高度分界点（升序排列）
 
 
-    public float cameraHeight = 20f; //小地图相机高度
-    public float cameraSize = 20f; //小地图相机的视场大小
+    public float cameraHeight = 100f; //小地图相机高度
+    //public float cameraSize = 20f; //小地图相机的视场大小
 
     private void Update()
     {

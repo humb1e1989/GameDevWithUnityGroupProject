@@ -7,7 +7,7 @@ public class MinMapCameraManager : MonoBehaviour
     [SerializeField] Camera minMapCamera;
 
     [SerializeField] private LayerMask[] floorLayers;  // 各层对应的图层（按顺序填充）
-    [[SerializeField] private float[] floorHeights;     // 各层的Y轴高度分界点（升序排列）
+    [SerializeField] private float[] floorHeights;     // 各层的Y轴高度分界点（升序排列）
 
 
     public float cameraHeight = 20f; //小地图相机高度

@@ -127,7 +127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buffType: 3
   rotationSpeed: 30
-  freezeDuration: 5
 --- !u!1001 &1125406389231711398
 PrefabInstance:
   m_ObjectHideFlags: 0

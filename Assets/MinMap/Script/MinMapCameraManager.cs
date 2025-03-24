@@ -17,7 +17,7 @@ public class MinMapCameraManager : MonoBehaviour
     {
         
         UpdateCameraPosition();
-        //UpdateCameraLayer();
+        UpdateCameraLayer();
     }
 
     private void UpdateCameraPosition() 

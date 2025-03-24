@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private float dashTimer = 0f;     // 冲刺计时器
     private bool isDashEnabled = false; // 冲刺功能是否已启用
 
+    private Animator animator;        // Animator 组件
+
     void Start()
     {
         // 如果没有手动赋值 Rigidbody，尝试自动获取
@@ -35,6 +37,9 @@ public class PlayerController : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
+
+        // 获取 Animator 组件
+        animator = GetComponent<Animator>();
 
         // 存储玩家的原始大小
         originalSize = transform.localScale;
@@ -100,6 +105,10 @@ public class PlayerController : MonoBehaviour
         // 计算移动速度
         float currentSpeed = isDashing ? moveSpeed * dashMultiplier : moveSpeed;
         playerRigidbody.linearVelocity = new Vector3(moveDirection.x * currentSpeed, playerRigidbody.linearVelocity.y, moveDirection.z * currentSpeed);
+
+        // 更新 Animator 的 Speed 参数
+        animator.SetFloat("Speed", moveDirection.magnitude * currentSpeed);
+        animator.SetBool("IsJumping", !isGrounded);
 
         // 地面检测
         RaycastHit hit;

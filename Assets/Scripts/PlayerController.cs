@@ -146,27 +146,6 @@ public class PlayerController : MonoBehaviour
         canDash = false;
         isDashEnabled = false;
         Debug.Log("Dash buff ended.");
-<<<<<<< Updated upstream
-    }
-
-    // 改变大小的方法
-    public void ChangeSize(Vector3 newSize, float duration, string changeType)
-    {
-        transform.localScale = newSize;
-        sizeChangeTimer = duration;
-        isSizeChanged = true;
-        sizeChangeType = changeType;
-        Debug.Log($"{changeType} buff started.");
-    }
-
-    // 恢复原始大小的方法
-    private void ResetSize()
-    {
-        transform.localScale = originalSize;
-        isSizeChanged = false;
-        Debug.Log($"{sizeChangeType} buff ended.");
-=======
->>>>>>> Stashed changes
     }
 
     // 改变大小的方法

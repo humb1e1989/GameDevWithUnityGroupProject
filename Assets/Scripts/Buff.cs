@@ -42,6 +42,7 @@ public class Buff : MonoBehaviour
         switch (buffType)
         {
             case BuffType.IncreaseSize:
+<<<<<<< Updated upstream
                 playerController.transform.localScale *= 3f; // 变为3倍大
                 break;
             case BuffType.DecreaseSize:
@@ -49,6 +50,27 @@ public class Buff : MonoBehaviour
                 break;
             case BuffType.EnableDash:
                 playerController.EnableDash(); // 激活冲刺功能
+=======
+                Debug.Log("变大");
+                playerController.ChangeSize(playerController.transform.localScale * 3f, 15f, "IncreaseSize"); // 变大并持续15秒
+                break;
+            case BuffType.DecreaseSize:
+                Debug.Log("变小");
+                playerController.ChangeSize(playerController.transform.localScale * 0.5f, 15f, "DecreaseSize"); // 变小并持续15秒
+                break;
+            case BuffType.EnableDash:
+                Debug.Log("加速");
+                playerController.EnableDash(15f); // 启用冲刺并持续15秒
+                break;
+            case BuffType.FreezeEnemy:
+                FreezeEnemies(); // 冻结所有敌人
+                break;
+            case BuffType.TransparentWall:
+                MakeWallsTransparent(); // 让墙体变透明
+                break;
+            case BuffType.TeleportToCoin:
+                TeleportPlayerNearRandomCoin(playerController.gameObject); // 传送到随机 Coin 旁边
+>>>>>>> Stashed changes
                 break;
         }
     }

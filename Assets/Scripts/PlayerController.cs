@@ -154,6 +154,7 @@ public class PlayerController : MonoBehaviour
     {
         canDash = false;
         isDashEnabled = false;
+        isDashing = false; // 强制结束冲刺状态
         Debug.Log("Dash buff ended.");
     }
 

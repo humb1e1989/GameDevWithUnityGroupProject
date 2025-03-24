@@ -628,7 +628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 40e3506c4b0507b46b80e3d079d87e31, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d59ada8f62c0ff4ea5ace4c15a9c0aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -698,6 +698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f5a822e5d7d6547a39a4ce2e70d0dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: 1a278df3b7185a64e86f7a9fe7c9d549, type: 3}
 --- !u!114 &1269769389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +745,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1269769388}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: GoToready
+        m_MethodName: GoToRule4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

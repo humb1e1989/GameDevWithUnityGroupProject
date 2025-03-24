@@ -43,6 +43,7 @@ public class Buff : MonoBehaviour
         {
             case BuffType.IncreaseSize:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 playerController.transform.localScale *= 3f; // 变为3倍大
                 break;
             case BuffType.DecreaseSize:
@@ -59,6 +60,16 @@ public class Buff : MonoBehaviour
                 playerController.ChangeSize(playerController.transform.localScale * 0.5f, 15f, "DecreaseSize"); // 变小并持续15秒
                 break;
             case BuffType.EnableDash:
+=======
+                Debug.Log("变大");
+                playerController.ChangeSize(playerController.transform.localScale * 3f, 15f, "IncreaseSize"); // 变大并持续15秒
+                break;
+            case BuffType.DecreaseSize:
+                Debug.Log("变小");
+                playerController.ChangeSize(playerController.transform.localScale * 0.5f, 15f, "DecreaseSize"); // 变小并持续15秒
+                break;
+            case BuffType.EnableDash:
+>>>>>>> Stashed changes
                 Debug.Log("加速");
                 playerController.EnableDash(15f); // 启用冲刺并持续15秒
                 break;

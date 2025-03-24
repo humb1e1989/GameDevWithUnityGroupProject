@@ -13,9 +13,9 @@ public class MinMapCameraManager : MonoBehaviour
     public float cameraHeight = 100f; //小地图相机高度
     //public float cameraSize = 20f; //小地图相机的视场大小
 
+
     private void Update()
     {
-        
         UpdateCameraPosition();
         UpdateCameraLayer();
     }
@@ -53,7 +53,7 @@ public class MinMapCameraManager : MonoBehaviour
                 break;
             }
         }
-        // 更新摄像机的渲染层级
-        minMapCamera.cullingMask = floorLayers[currentFloor];
+            // 更新摄像机的渲染层级
+            minMapCamera.cullingMask = floorLayers[currentFloor];
     }
 }

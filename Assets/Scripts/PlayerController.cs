@@ -14,6 +14,16 @@ public class PlayerController : MonoBehaviour
     private bool canDash = false;     // 是否可以冲刺（由Buff激活）
     private int jumpCount = 0;        // 跳跃次数
 
+    private Vector3 originalSize;     // 原始大小
+    private float sizeChangeTimer = 0f; // 大小变化计时器
+    private bool isSizeChanged = false; // 大小是否已改变
+    private string sizeChangeType;    // 大小变化类型（变大或变小）
+
+    private float dashTimer = 0f;     // 冲刺计时器
+    private bool isDashEnabled = false; // 冲刺功能是否已启用
+
+    private Animator animator;        // Animator 组件
+
     void Start()
     {
         // 如果没有手动赋值 Rigidbody，尝试自动获取
@@ -27,10 +37,36 @@ public class PlayerController : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
+
+        // 获取 Animator 组件
+        animator = GetComponent<Animator>();
+
+        // 存储玩家的原始大小
+        originalSize = transform.localScale;
     }
 
     void Update()
     {
+        // 大小变化计时逻辑
+        if (isSizeChanged)
+        {
+            sizeChangeTimer -= Time.deltaTime;
+            if (sizeChangeTimer <= 0)
+            {
+                ResetSize(); // 恢复原始大小
+            }
+        }
+
+        // 冲刺计时逻辑
+        if (isDashEnabled)
+        {
+            dashTimer -= Time.deltaTime;
+            if (dashTimer <= 0)
+            {
+                DisableDash(); // 禁用冲刺
+            }
+        }
+
         // 让角色面向摄像机的反方向
         Vector3 cameraPosition = cameraTransform.position;
         Vector3 playerPosition = transform.position;
@@ -70,6 +106,10 @@ public class PlayerController : MonoBehaviour
         float currentSpeed = isDashing ? moveSpeed * dashMultiplier : moveSpeed;
         playerRigidbody.linearVelocity = new Vector3(moveDirection.x * currentSpeed, playerRigidbody.linearVelocity.y, moveDirection.z * currentSpeed);
 
+        // 更新 Animator 的 Speed 参数
+        animator.SetFloat("Speed", moveDirection.magnitude * currentSpeed);
+        animator.SetBool("IsJumping", !isGrounded);
+
         // 地面检测
         RaycastHit hit;
         Vector3 rayOrigin = transform.position + Vector3.down * 0.5f; // 确保射线从角色的脚底发射
@@ -100,14 +140,39 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * rayLength);
     }
 
-    // 启用冲刺功能
-    public void EnableDash()
+    // 启用冲刺功能并设置时限
+    public void EnableDash(float duration)
     {
         canDash = true;
+        dashTimer = duration;
+        isDashEnabled = true;
+        Debug.Log("Dash buff started.");
     }
 
+    // 禁用冲刺功能
     public void DisableDash()
     {
         canDash = false;
+        isDashEnabled = false;
+        isDashing = false; // 强制结束冲刺状态
+        Debug.Log("Dash buff ended.");
+    }
+
+    // 改变大小的方法
+    public void ChangeSize(Vector3 newSize, float duration, string changeType)
+    {
+        transform.localScale = newSize;
+        sizeChangeTimer = duration;
+        isSizeChanged = true;
+        sizeChangeType = changeType;
+        Debug.Log($"{changeType} buff started.");
+    }
+
+    // 恢复原始大小的方法
+    private void ResetSize()
+    {
+        transform.localScale = originalSize;
+        isSizeChanged = false;
+        Debug.Log($"{sizeChangeType} buff ended.");
     }
 }

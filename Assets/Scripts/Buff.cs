@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Buff : MonoBehaviour
@@ -61,6 +62,7 @@ public class Buff : MonoBehaviour
                 break;
         }
     }
+
 
     void FreezeEnemies()
     {

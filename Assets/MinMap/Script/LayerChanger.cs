@@ -17,8 +17,24 @@ public class GhostLayer : MonoBehaviour
             if (gameObject.layer != dectedLayer) 
             {
                 gameObject.layer = dectedLayer;
+                ChangeChildrenLayer(gameObject.transform, dectedLayer);
                 Debug.Log("Layer change to " + dectedLayer);
             }
         }
+    }
+
+    private void ChangeChildrenLayer(Transform transform, LayerMask targetLayer) 
+    {
+        
+        // 一次性获取所有子对象Transform（包括嵌套子对象和未激活的）
+        Transform[] allTransforms = GetComponentsInChildren<Transform>(true);
+
+        // 遍历更新
+        foreach (Transform t in allTransforms)
+        {
+            t.gameObject.layer = targetLayer;
+        }
+
+        Debug.Log($"已更新 {allTransforms.Length} 个对象的层级为 {targetLayer}");
     }
 }

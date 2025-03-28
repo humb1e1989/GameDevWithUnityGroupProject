@@ -55,7 +55,7 @@ public class Buff : MonoBehaviour
                 FreezeEnemies(); // 冻结所有敌人
                 break;
             case BuffType.TransparentWall:
-                MakeWallsTransparent(); // 让墙体变透明
+                playerController.ApplyTransparentWallBuff(15f); // 透明墙持续15秒
                 break;
             case BuffType.TeleportToCoin:
                 TeleportPlayerNearRandomCoin(playerController.gameObject); // 传送到随机 Coin 旁边

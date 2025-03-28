@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,6 +24,12 @@ public class PlayerController : MonoBehaviour
     private bool isDashEnabled = false; // 冲刺功能是否已启用
 
     private Animator animator;        // Animator 组件
+
+    [SerializeField] private GameObject maze1;
+    [SerializeField] private GameObject maze2;
+    [SerializeField] private GameObject guidePath;
+
+    private bool isWallTransparent = false; // 是否正在透明状态
 
     void Start()
     {
@@ -175,4 +182,78 @@ public class PlayerController : MonoBehaviour
         isSizeChanged = false;
         Debug.Log($"{sizeChangeType} buff ended.");
     }
+
+
+    // 当透明墙 Buff 触发时调用
+    public void ApplyTransparentWallBuff(float duration)
+    {
+        if (isWallTransparent)
+        {
+            Debug.Log("Wall is already transparent!");
+            return;
+        }
+
+        Debug.Log("Applying Transparent Wall Buff!");
+        StartCoroutine(TransparentWallRoutine(duration));
+    }
+
+    private IEnumerator TransparentWallRoutine(float duration)
+    {
+        // 直接调用原版的 MakeWallsTransparent() 方法
+        MakeWallsTransparent();
+        isWallTransparent = true;
+
+        yield return new WaitForSeconds(duration);
+
+        // 恢复墙的不透明状态
+        RevertWalls();
+        isWallTransparent = false;
+        Debug.Log("Transparent Wall Buff ended!");
+    }
+
+    // 你的原版方法（直接从 Buff 脚本复制过来）
+    private void MakeWallsTransparent()
+    {
+        GameObject maze1 = GameObject.Find("Maze_01");
+        GameObject maze2 = GameObject.Find("Maze_02");
+        GameObject guide = GameObject.Find("GuidePath");
+        GameObject guidePath = guide?.transform.Find("Guide")?.gameObject;
+
+        if (maze1 != null) SetTransparency(maze1, 0.3f);
+        if (maze2 != null) SetTransparency(maze2, 0.3f);
+        if (guidePath != null) guidePath.SetActive(true);
+    }
+
+    private void RevertWalls()
+    {
+        GameObject maze1 = GameObject.Find("Maze_01");
+        GameObject maze2 = GameObject.Find("Maze_02");
+        GameObject guide = GameObject.Find("GuidePath");
+        GameObject guidePath = guide?.transform.Find("Guide")?.gameObject;
+
+        if (maze1 != null) SetTransparency(maze1, 1f);
+        if (maze2 != null) SetTransparency(maze2, 1f);
+        if (guidePath != null) guidePath.SetActive(false);
+    }
+
+    // 你的原版 SetTransparency 方法（确保使用 URP Shader 设置）
+    private void SetTransparency(GameObject obj, float alpha)
+    {
+        Renderer[] renderers = obj.GetComponentsInChildren<Renderer>();
+        foreach (Renderer renderer in renderers)
+        {
+            Material mat = renderer.material;
+            mat.SetFloat("_Surface", 1); // URP 透明模式
+            mat.SetFloat("_Blend", 1);
+            mat.SetInt("_ZWrite", 0);
+            mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+            mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+
+            Color color = mat.GetColor("_BaseColor");
+            color.a = alpha;
+            mat.SetColor("_BaseColor", color);
+            mat.renderQueue = 3000;
+        }
+    }
+
 }

@@ -10,12 +10,7 @@ public class GhostEffectControler : MonoBehaviour
 
     private bool isPaused=false;
     private Vector3 pausedPosition;
-    //private Rigidbody ghostRb;
 
-    private void Start()
-    {
-        //ghostRb = GetComponent<Rigidbody>();
-    }
     private void Update()
     {
         if (isPaused)
@@ -40,7 +35,7 @@ public class GhostEffectControler : MonoBehaviour
         }
     }
     //暂停敌人动作
-    private IEnumerator PausedGhost() 
+    private void PausedGhost() 
     {
         if (!isPaused)
         {
@@ -48,11 +43,16 @@ public class GhostEffectControler : MonoBehaviour
             pausedPosition = transform.position;
             //暂停
             isPaused = true;
-            //等待暂停时间
-            yield return new WaitForSeconds(pausedTime);
-            //重置
-            isPaused = false;
-            Debug.Log(gameObject.name+" 结束暂停。");
+            //等待暂停时间后重置运动
+            StartCoroutine(UnlockAfterDelay());
         }
+        if (isPaused) return;
+    }
+    // 协程：延迟后解锁
+    System.Collections.IEnumerator UnlockAfterDelay()
+    {
+        yield return new WaitForSeconds(pausedTime);
+        isPaused = false;
+        Debug.Log(gameObject.name + " 结束暂停。");
     }
 }

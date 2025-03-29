@@ -9,14 +9,14 @@ public class GhostEffectControler : MonoBehaviour
     [SerializeField] private float pausedTime = 5f;
 
     private bool isPaused=false;
-    private Vector3 pausedPosition;
+    private Vector2 pausedPosition;
 
-    private void Update()
+    void Update()
     {
         if (isPaused)
         {
             //froze ghost in position
-            transform.position = pausedPosition;
+            transform.position = new Vector3(pausedPosition.x,transform.position.y,pausedPosition.y);
         }
     }
 
@@ -40,7 +40,7 @@ public class GhostEffectControler : MonoBehaviour
         if (!isPaused)
         {
             //get paused position
-            pausedPosition = transform.position;
+            pausedPosition = new Vector2(transform.position.x,transform.position.z);
             //暂停
             isPaused = true;
             //等待暂停时间后重置运动

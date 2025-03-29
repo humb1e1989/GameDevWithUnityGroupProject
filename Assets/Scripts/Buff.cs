@@ -63,7 +63,6 @@ public class Buff : MonoBehaviour
         }
     }
 
-
     void FreezeEnemies()
     {
         GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost"); // 查找所有 "Ghost" 标签的对象

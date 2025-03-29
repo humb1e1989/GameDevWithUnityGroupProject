@@ -26,12 +26,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Start scenes/ready.unity
     guid: 779772ef5e8d0544d9c43943459e9510
-  - enabled: 1
+  - enabled: 0
     path: Assets/PolygonHorrorMansion/Scenes/Demo_01.unity
     guid: dda52f1b21df39c459a6b2eafa31df9d
   - enabled: 1
     path: Assets/Start scenes/rule4.unity
     guid: b03e85c027bdd004691ced87c205a0e0
+  - enabled: 1
+    path: Assets/Scenes/Demo_01.unity
+    guid: 4b0757403c26a974a9aec9fcf23364d8
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2c14bbed594c084428ddc9009b83604a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

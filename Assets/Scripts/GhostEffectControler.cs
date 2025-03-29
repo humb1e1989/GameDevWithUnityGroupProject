@@ -8,11 +8,21 @@ public class GhostEffectControler : MonoBehaviour
     [Tooltip("暂停持续时间（秒）")]
     [SerializeField] private float pausedTime = 5f;
 
-    [SerializeField] private bool isPaused=false;
+    private bool isPaused=false;
+    private Vector3 pausedPosition;
+    //private Rigidbody ghostRb;
 
     private void Start()
     {
-
+        //ghostRb = GetComponent<Rigidbody>();
+    }
+    private void Update()
+    {
+        if (isPaused)
+        {
+            //froze ghost in position
+            transform.position = pausedPosition;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,14 +44,14 @@ public class GhostEffectControler : MonoBehaviour
     {
         if (!isPaused)
         {
+            //get paused position
+            pausedPosition = transform.position;
             //暂停
             isPaused = true;
-            GetComponent<Collider>().enabled = false;
             //等待暂停时间
             yield return new WaitForSeconds(pausedTime);
             //重置
             isPaused = false;
-            GetComponentInChildren<Collider>().enabled = true;
             Debug.Log(gameObject.name+" 结束暂停。");
         }
     }

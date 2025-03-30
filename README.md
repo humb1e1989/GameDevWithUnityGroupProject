@@ -3,8 +3,8 @@ This is for COSC416/516
 
 # **Game Development Report - Lucas Xu**
 
-## **Ghost Implementation**
-### **Tracking Ghost (NavMesh)**
+## **Implement**
+#### **Tracking Ghost (NavMesh)**
 - Utilizes **NavMeshAgent** to enable **real-time player tracking**.
 
 ### **Patrolling Ghost**

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1614803893836083634}
   - component: {fileID: 9176011667622051491}
   - component: {fileID: 7977839353825500954}
+  - component: {fileID: 7922509676719670337}
   m_Layer: 0
   m_Name: FrozenBuff
   m_TagString: Untagged
@@ -127,6 +128,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buffType: 3
   rotationSpeed: 30
+--- !u!114 &7922509676719670337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736949133302457389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4fe17a028a26a40a3b89f3f6ff4ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1125406389231711398
 PrefabInstance:
   m_ObjectHideFlags: 0

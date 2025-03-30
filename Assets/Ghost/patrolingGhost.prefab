@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 8327512922484090371}
   - component: {fileID: 5208476796849112723}
   - component: {fileID: 7512494694631739050}
+  - component: {fileID: 5641348465385261108}
   m_Layer: 0
   m_Name: patrolingGhost
   m_TagString: Ghost
@@ -283,6 +284,18 @@ MonoBehaviour:
   patrolOffset: {x: 5, y: 0, z: 5}
   speed: 3
   rotationSpeed: 5
+--- !u!114 &5641348465385261108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3965417983652901913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4fe17a028a26a40a3b89f3f6ff4ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &83319783026221320
 PrefabInstance:
   m_ObjectHideFlags: 0

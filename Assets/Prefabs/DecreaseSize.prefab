@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 861583670886126770}
   - component: {fileID: 4772033096545495096}
   - component: {fileID: 9203782433173700039}
+  - component: {fileID: 2788390825309096899}
   m_Layer: 0
   m_Name: DecreaseSize
   m_TagString: Untagged
@@ -126,6 +127,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buffType: 1
   rotationSpeed: 30
+--- !u!114 &2788390825309096899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4420532184669858525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4fe17a028a26a40a3b89f3f6ff4ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4933282472626164285
 PrefabInstance:
   m_ObjectHideFlags: 0

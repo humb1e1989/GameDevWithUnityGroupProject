@@ -561,6 +561,7 @@ MonoBehaviour:
   coinTextContainer: {fileID: 642948764402375793}
   duration: 0.4
   animationCurve: 29
+  gameFinishCanvas: {fileID: 0}
 --- !u!1 &7721570492568176681
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,8 +636,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285224262
-  m_fontColor: {r: 0.27450982, g: 0.33333334, b: 0.41960788, a: 1}
+    rgba: 4291075974
+  m_fontColor: {r: 0.52500206, g: 0.6234697, b: 0.7678889, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

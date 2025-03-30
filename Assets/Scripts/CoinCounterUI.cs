@@ -58,6 +58,7 @@ public class CoinCounterUI : MonoBehaviour
 
     private void GameFinish()
     {
+        Cursor.visible = true;
         gameFinishCanvas.SetActive(true); // 显示胜利界面
         Time.timeScale = 0f; // 暂停游戏
         Debug.Log("游戏胜利，已暂停！");

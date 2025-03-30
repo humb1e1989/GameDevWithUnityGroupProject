@@ -30,9 +30,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject guidePath;
 
     private bool isWallTransparent = false; // 是否正在透明状态
+    private bool isCursorLocked = true;
 
     void Start()
     {
+
+        LockCursor();
+
         // 如果没有手动赋值 Rigidbody，尝试自动获取
         if (playerRigidbody == null)
         {
@@ -54,6 +58,19 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isCursorLocked)
+            {
+                UnlockCursor(); // 释放鼠标
+            }
+            else
+            {
+                LockCursor(); // 重新锁定鼠标
+            }
+        }
+
         // 大小变化计时逻辑
         if (isSizeChanged)
         {
@@ -254,6 +271,24 @@ public class PlayerController : MonoBehaviour
             mat.SetColor("_BaseColor", color);
             mat.renderQueue = 3000;
         }
+    }
+
+    // 隐藏鼠标并锁定
+    void LockCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        isCursorLocked = true;
+        Debug.Log("鼠标隐藏");
+    }
+
+    // 显示鼠标并解锁
+    void UnlockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        isCursorLocked = false;
+        Debug.Log("鼠标显示");
     }
 
 }

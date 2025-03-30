@@ -14,9 +14,8 @@ This is for COSC416/516
 - **Tracking Ghost Sound**: Volume changes dynamically **based on the distance** from the player.  
 - **Collision Sound**: Plays when the ghost touches the player.
 
-<video src="https://github.com/user-attachments/assets/87074db4-5d73-450d-bbdb-78edd5a9ef00" width="30%" controls>
-  Your browser does not support the video tag.
-</video>
+**Link：https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/a3c539de225f141b29357e8d99c2efded1af8a13**
+https://github.com/user-attachments/assets/87074db4-5d73-450d-bbdb-78edd5a9ef00
 
 ---
 

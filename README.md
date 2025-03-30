@@ -18,10 +18,10 @@ This is for COSC416/516
 
 ## **Implement: partial Buff Implementation**
 ### **Freeze Buff**
-- Freezes **tracking ghosts for 15 seconds**.
+- Freezes **tracking ghosts**.
 
 ### **Invisible Wall Buff**
-- Turns certain walls **semi-transparent** and reveals **the optimal path** for 15 seconds.
+- Turns certain walls **semi-transparent** and reveals **the optimal path**.
 
 ### **Teleport Buff**
 - Instantly **teleports the player to a random coin nearby**.
@@ -52,6 +52,11 @@ This is for COSC416/516
 
 ## **Optimization: partial Buff Duration**
 - **Freeze Buff** and **Invisible Wall Buff** duration extended to **15 seconds**.
+
+---
+
+### **Buff Duration Adjustment on Freeze Buff and Invisible Wall Buff**
+- **Extended Freeze Buff and Invisible Wall Buff duration to 15 seconds**.
 
 ---
 

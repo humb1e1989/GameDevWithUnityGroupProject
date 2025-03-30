@@ -40,7 +40,8 @@ This is for COSC416/516
 3. **Placed buffs, ghosts, and coins**, refining the invisible wall buff’s path.  
 4. **Adjusted NavMesh pathfinding**, resolving walkable areas marked as non-walkable.  
 5. **Added Game Finish Menu** that triggers upon collecting **20 coins**.  
-6. **Fixed Bug**: **Coin count now resets upon restart after player death**.  
+6. **Fixed Bug**: **Coin count now resets upon restart after player death**.
+7. **Final test**: Make sure the game is **playable** and **reasonable**. 
 
 ---
 

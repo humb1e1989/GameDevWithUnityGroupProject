@@ -1,4 +1,4 @@
-<img width="372" alt="image" src="https://github.com/user-attachments/assets/e3c6a516-798c-45e4-9506-fd261d3fe14c" /># 3D Pac-Man Style Game - UI System and Health System Development Documentation 🎮
+# 3D Pac-Man Style Game - UI System and Health System Development Documentation 🎮
 
 ## 1. Project Overview 🌟
 

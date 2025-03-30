@@ -67,7 +67,7 @@ public class SceneController : MonoBehaviour
             case SceneType.ready:
                 return "Start scenes/ready";
             case SceneType.Game:
-                return "PolygonHorrorMansion/Scenes/Demo_01";
+                return "Scenes/Demo_01";
             default:
                 return string.Empty; // 默认返回空字符串
         }

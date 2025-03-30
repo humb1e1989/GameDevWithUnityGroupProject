@@ -155,6 +155,7 @@ public class PlayerHealthSystem : MonoBehaviour
         }
 
         Time.timeScale = 0f;
+        CoinCounterUI.score = 0;
         // 这里可以选择立即结束游戏或是等待一段时间后重生
         Debug.Log("玩家死亡");
 

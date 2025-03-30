@@ -61,13 +61,14 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isCursorLocked)
+            // 直接根据当前状态切换，而不是依赖布尔变量
+            if (Cursor.lockState == CursorLockMode.Locked)
             {
-                UnlockCursor(); // 释放鼠标
+                UnlockCursor();
             }
             else
             {
-                LockCursor(); // 重新锁定鼠标
+                LockCursor();
             }
         }
 
@@ -278,17 +279,14 @@ public class PlayerController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        isCursorLocked = true;
-        Debug.Log("鼠标隐藏");
+        Debug.Log("鼠标已隐藏并锁定");
     }
 
-    // 显示鼠标并解锁
     void UnlockCursor()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        isCursorLocked = false;
-        Debug.Log("鼠标显示");
+        Debug.Log("鼠标已显示并解锁");
     }
 
 }

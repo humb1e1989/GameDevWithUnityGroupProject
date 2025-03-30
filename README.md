@@ -15,6 +15,7 @@ This is for COSC416/516
 - **Collision Sound**: Plays when the ghost touches the player.
 
 **Link：https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/a3c539de225f141b29357e8d99c2efded1af8a13**
+
 https://github.com/user-attachments/assets/87074db4-5d73-450d-bbdb-78edd5a9ef00
 
 ---

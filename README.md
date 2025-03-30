@@ -14,6 +14,8 @@ This is for COSC416/516
 - **Tracking Ghost Sound**: Volume changes dynamically **based on the distance** from the player.  
 - **Collision Sound**: Plays when the ghost touches the player.
 
+https://github.com/user-attachments/assets/87074db4-5d73-450d-bbdb-78edd5a9ef00
+
 ---
 
 ## **Implement: partial Buff Implementation**
@@ -31,6 +33,12 @@ This is for COSC416/516
 ## **Implement: Initial UI Implementation**
 - **Menu UI** (already be replaced).  
 - **Help and Game Rules Interface** added.
+
+
+
+https://github.com/user-attachments/assets/81fa8842-2984-4e77-b39f-690d665e975c
+
+
 
 ---
 

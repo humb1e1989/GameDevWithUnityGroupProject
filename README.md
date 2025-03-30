@@ -5,21 +5,34 @@
 This project is a **3D version of a Pac-Man style chase game** 🏃‍♂️👻. This documentation details the design and implementation process of the UI system and health system, including menu systems, pause functionality, game over interface, and player health management mechanisms. Through carefully designed user interfaces and health systems, we provide players with a smooth and intuitive gaming experience.
 
 ## 2. Implemented Features✨
-> **Iverson Yuan**
-### 2.1 UI System 📱
+## **Iverson Yuan**
+
+## 2.1 Demonstration Video 🎬
+
+[Insert game demonstration video link here]
+
+The video demonstrates the following features:
+- Main menu interface and opening animation 🏠
+- Game introduction screen information display 📖
+- In-game health UI display ❤️
+- Damage handling from enemy collisions 💥
+- Pause menu usage ⏸️
+- Game over interface and options 🏁
+
+### 2.2 UI System 📱
 - **Main Menu Interface** 🏠: Entry point of the game, featuring an elegant opening animation
 - **Game Introduction Screen** 📖: Displays game background story and operation guidelines
 - **Pause Menu System** ⏸️: Allows players to pause the game and provides various options
 - **Game Over Interface** 🏁: Appears when the player dies, offering restart and exit options
 - **Health Display UI** ❤️: Intuitively shows the player's current health status
 
-### 2.2 Health System ❤️
+### 2.3 Health System ❤️
 - **Player Health Management** 💗: Manages player's health status and related effects
 - **Collision Damage Detection** 💥: Detects collisions with enemies and reduces health
 - **Damage Effects** ⚡: Implements invincibility time and visual feedback when injured
 - **Death Handling** ☠️: Game-ending procedure when health is depleted
 
-### 2.3 Audio System 🎵
+### 2.4 Audio System 🎵
 - **Scene Music Switching** 🔄: Automatically switches background music based on different scenes
 - **Background Music Management** 🎼: Smooth transitions and volume control
 
@@ -137,35 +150,3 @@ The audio management system controls the background music in the game, **automat
 - __Fade-in and fade-out effects__ 📉📈 between music tracks
 - Singleton pattern ensuring a global unique instance 🔒
 - Volume adjustment functionality 🔊
-
-## 4. System Integration and Interaction 🔄
-
-The various systems form a tightly connected whole, creating a smooth gaming experience:
-
-1. **Interface Flow** 📊
-   - __Main Menu (with opening animation) → Game Introduction → Game Scene → Pause Menu/Game Over Interface__ 🔄
-   - Each transition has smooth effects ✨
-
-2. **System Linkage** ⚙️
-   - Collision System → Health System → UI Update → Possible Game Over Trigger ⛓️
-   - Scene Change → Audio Management System → Background Music Switch 🎵
-
-3. **Event-Driven Architecture** 📡
-   - Using Unity's event system to implement **loosely coupled communication** 📲 between systems
-   - Key events: player injured 💥, player death ☠️, scene loading complete ✅
-
-4. **Singleton Pattern Application** 🔒
-   - Audio manager uses singleton to ensure global uniqueness 🌐
-   - Facilitates access to core system functions from any script 🔓
-
-## 5. Demonstration Video 🎬
-
-[Insert game demonstration video link here]
-
-The video demonstrates the following features:
-- Main menu interface and opening animation 🏠
-- Game introduction screen information display 📖
-- In-game health UI display ❤️
-- Damage handling from enemy collisions 💥
-- Pause menu usage ⏸️
-- Game over interface and options 🏁

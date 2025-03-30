@@ -2,51 +2,59 @@
 
 public class EnemyPatrol : MonoBehaviour
 {
-    public Vector3 pointA = new Vector3(1, 0, 0);  // 起始点 A
-    public Vector3 pointB = new Vector3(0, 0, 0);  // 终点 B
-    public float speed = 1.5f;  // 控制移动速度
-    public float rotationSpeed = 5.0f;  // 旋转速度，决定转头的平滑度
-    private Vector3 currentTarget;  // 当前目标点
-    private bool movingToB = true;  // 用于判断当前是否在向B点移动
+    [Header("巡逻设置")]
+    public Vector3 patrolOffset = new Vector3(5f, 0f, 5f);  // 相对于初始位置的偏移量
+    public float speed = 1.5f;
+    public float rotationSpeed = 5.0f;
+
+    private Vector3 startPosition;  // 记录初始位置
+    private Vector3 targetPosition; // 计算出的目标位置
+    private bool movingToOffset = true;
 
     void Start()
     {
-        // 初始化当前目标为 pointA
-        currentTarget = pointA;
+        startPosition = transform.position;  // 记录初始位置
+        targetPosition = startPosition + patrolOffset;  // 计算目标位置
     }
 
     void Update()
     {
-        // 计算每帧的移动量
+        // 移动逻辑
         float step = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
 
-        // 移动敌人
-        transform.position = Vector3.MoveTowards(transform.position, currentTarget, step);
-
-        // 计算目标方向
-        Vector3 targetDirection = currentTarget - transform.position;
-
-        // 平滑地转向目标方向
-        if (targetDirection != Vector3.zero)
+        // 转向逻辑
+        Vector3 direction = targetPosition - transform.position;
+        if (direction != Vector3.zero)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
 
-        // 检查敌人是否到达目标点
-        if (Vector3.Distance(transform.position, currentTarget) < 0.1f)
+        // 到达检测
+        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
         {
-            // 到达目标后切换目标
-            if (movingToB)
+            if (movingToOffset)
             {
-                currentTarget = pointB;  // 设置为B点
+                targetPosition = startPosition;  // 返回起始点
             }
             else
             {
-                currentTarget = pointA;  // 设置为A点
+                targetPosition = startPosition + patrolOffset;  // 前往偏移点
             }
-            movingToB = !movingToB;  // 切换方向
+            movingToOffset = !movingToOffset;
         }
     }
 
+    // 在Scene视图中绘制巡逻路径（方便调试）
+    void OnDrawGizmosSelected()
+    {
+        if (Application.isPlaying)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(startPosition, startPosition + patrolOffset);
+            Gizmos.DrawSphere(startPosition, 0.2f);
+            Gizmos.DrawSphere(startPosition + patrolOffset, 0.2f);
+        }
+    }
 }

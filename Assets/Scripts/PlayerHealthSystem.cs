@@ -101,8 +101,8 @@ public class PlayerHealthSystem : MonoBehaviour
                 livesIcons[i].SetActive(i < currentLives);
             }
         }
-
         // 更新生命文本（如果有）
+
         if (livesText != null)
         {
             livesText.text = "Lives: " + currentLives.ToString();
@@ -154,6 +154,8 @@ public class PlayerHealthSystem : MonoBehaviour
             Debug.LogError("游戏结束画面Canvas未设置！");
         }
 
+        Time.timeScale = 0f;
+        CoinCounterUI.score = 0;
         // 这里可以选择立即结束游戏或是等待一段时间后重生
         Debug.Log("玩家死亡");
 

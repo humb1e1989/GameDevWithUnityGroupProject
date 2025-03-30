@@ -10,6 +10,7 @@ public class CoinCounterUI : MonoBehaviour
     [SerializeField] private Transform coinTextContainer;
     [SerializeField] private float duration;
     [SerializeField] private Ease animationCurve;
+    [SerializeField] private GameObject gameFinishCanvas;
 
     public static int score = 0; // 静态分数变量
 
@@ -23,6 +24,7 @@ public class CoinCounterUI : MonoBehaviour
         toUpdate.SetText("0");
         containerInitPosition = coinTextContainer.localPosition.y;
         moveAmount = current.rectTransform.rect.height;
+        gameFinishCanvas.SetActive(false);
     }
 
     public void UpdateScore(int newScore)
@@ -33,6 +35,14 @@ public class CoinCounterUI : MonoBehaviour
         coinTextContainer.DOLocalMoveY(containerInitPosition + moveAmount, duration).SetEase(animationCurve);
         // 启动协程
         StartCoroutine(ResetCoinContainer(newScore));
+
+        if (newScore >= 20)
+        {
+            GameFinish();
+            Debug.Log("游戏胜利");
+            newScore = 0;
+            score = 0;
+        }
     }
 
     private IEnumerator ResetCoinContainer(int newScore)
@@ -44,5 +54,13 @@ public class CoinCounterUI : MonoBehaviour
         // 重置 coinTextContainer 的 y 本地位置
         Vector3 localPosition = coinTextContainer.localPosition;
         coinTextContainer.localPosition = new Vector3(localPosition.x, containerInitPosition, localPosition.z);
+    }
+
+    private void GameFinish()
+    {
+        Cursor.visible = true;
+        gameFinishCanvas.SetActive(true); // 显示胜利界面
+        Time.timeScale = 0f; // 暂停游戏
+        Debug.Log("游戏胜利，已暂停！");
     }
 }

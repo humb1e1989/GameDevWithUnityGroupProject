@@ -15,7 +15,6 @@ This is for COSC416/516
 - **Collision Sound**: Plays when the ghost touches the player.
 
 **Link：https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/a3c539de225f141b29357e8d99c2efded1af8a13**
-
 https://github.com/user-attachments/assets/87074db4-5d73-450d-bbdb-78edd5a9ef00
 
 ---
@@ -30,6 +29,10 @@ https://github.com/user-attachments/assets/87074db4-5d73-450d-bbdb-78edd5a9ef00
 ### **Teleport Buff**
 - Instantly **teleports the player to a random coin nearby**.
 
+**Link：https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/eff61e1b904093335b1ff59ee70636f4de02d3b4**
+
+https://github.com/user-attachments/assets/81fa8842-2984-4e77-b39f-690d665e975c
+
 ---
 
 ## **Implement: Initial UI Implementation**
@@ -37,8 +40,11 @@ https://github.com/user-attachments/assets/87074db4-5d73-450d-bbdb-78edd5a9ef00
 - **Help and Game Rules Interface** added.
 
 
+https://github.com/user-attachments/assets/1cefa2a1-aba2-48bb-a284-8be8c4fa5bfc
 
-https://github.com/user-attachments/assets/81fa8842-2984-4e77-b39f-690d665e975c
+
+**Link：https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/fbf814d8b7065f12f6c51a4b1ecca523a378c682**
+**Link：https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/af2a13d4dd73a783d4fb3b03a2fa776190dfe43b**
 
 
 

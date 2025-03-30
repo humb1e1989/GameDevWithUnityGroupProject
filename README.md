@@ -55,7 +55,7 @@ This is for COSC416/516
 
 ---
 
-### **Buff Duration Adjustment on Freeze Buff and Invisible Wall Buff**
+### **Ootimization: partial Buff Duration Adjustment**
 - **Extended Freeze Buff and Invisible Wall Buff duration to 15 seconds**.
 
 ---

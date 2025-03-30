@@ -1,11 +1,11 @@
-# 3D Pac-Man Style Game - UI System and Health System Development Documentation 🎮
+<img width="372" alt="image" src="https://github.com/user-attachments/assets/e3c6a516-798c-45e4-9506-fd261d3fe14c" /># 3D Pac-Man Style Game - UI System and Health System Development Documentation 🎮
 
 ## 1. Project Overview 🌟
 
 This project is a **3D version of a Pac-Man style chase game** 🏃‍♂️👻. This documentation details the design and implementation process of the UI system and health system, including menu systems, pause functionality, game over interface, and player health management mechanisms. Through carefully designed user interfaces and health systems, we provide players with a smooth and intuitive gaming experience.
 
-## 2. Implemented Features ✨
-
+## 2. Implemented Features✨
+> **Iverson Yuan**
 ### 2.1 UI System 📱
 - **Main Menu Interface** 🏠: Entry point of the game, featuring an elegant opening animation
 - **Game Introduction Screen** 📖: Displays game background story and operation guidelines

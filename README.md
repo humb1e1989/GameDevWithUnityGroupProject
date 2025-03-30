@@ -1,7 +1,7 @@
 # GameDevWithUnityGroupProject
 This is for COSC416/516
 
-# **Game Development Report**
+# **Game Development Report - Lucas Xu**
 
 ## **Ghost Implementation**
 ### **Tracking Ghost (NavMesh)**

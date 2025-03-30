@@ -5,7 +5,7 @@
 This project is a **3D version of a Pac-Man style chase game** 🏃‍♂️👻. This documentation details the design and implementation process of the UI system and health system, including menu systems, pause functionality, game over interface, and player health management mechanisms. Through carefully designed user interfaces and health systems, we provide players with a smooth and intuitive gaming experience.
 
 ## 2. Implemented Features✨
-## **Iverson Yuan**
+### **Iverson Yuan**
 
 ## 2.1 Demonstration Video 🎬
 

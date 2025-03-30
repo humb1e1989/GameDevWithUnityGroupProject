@@ -29,7 +29,7 @@ This is for COSC416/516
 ---
 
 ## **Initial UI Implementation**
-- **Menu UI** updated.  
+- **Menu UI** (Be replaced).  
 - **Help and Game Rules Interface** added.
 
 ---

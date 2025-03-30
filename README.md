@@ -3,7 +3,7 @@ This is for COSC416/516
 
 # **Game Development Report - Lucas Xu**
 
-## **implement: Ghost Implementation**
+## **Implement: Ghost Implementation**
 ### **Tracking Ghost (NavMesh)**
 - Utilizes **NavMeshAgent** to enable **real-time player tracking**.
 
@@ -16,7 +16,7 @@ This is for COSC416/516
 
 ---
 
-## **implement: partial Buff Implementation**
+## **Implement: partial Buff Implementation**
 ### **Freeze Buff**
 - Freezes **tracking ghosts for 15 seconds**.
 
@@ -28,13 +28,13 @@ This is for COSC416/516
 
 ---
 
-## **implement: Initial UI Implementation**
-- **Menu UI** updated.  
+## **Implement: Initial UI Implementation**
+- **Menu UI** (already be replaced).  
 - **Help and Game Rules Interface** added.
 
 ---
 
-## **implement: Final Scene Adjustments**
+## **Implement: Final Scene Adjustments**
 1. **Optimized Ghost UI**.  
 2. **Improved Coin UI** for better visibility.  
 3. **Placed buffs, ghosts, and coins**, refining the invisible wall buff’s path.  

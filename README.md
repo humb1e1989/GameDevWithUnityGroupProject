@@ -2,7 +2,6 @@
 This is for COSC416/516
 
 # **Game Development Report - Lucas Xu**
-# **Game Development Report**
 
 ## **Implementation**
 ### **Ghost System**

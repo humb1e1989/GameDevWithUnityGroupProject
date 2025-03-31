@@ -1,7 +1,7 @@
 # GameDevWithUnityGroupProject
 This is for COSC416/516
 
-# **Game Development Report - Lucas Xu**
+# **Lucas Xu**
 
 ## **Implement: Ghost Implementation**
 ### **Tracking Ghost (NavMesh)**
@@ -80,6 +80,10 @@ https://github.com/user-attachments/assets/1cefa2a1-aba2-48bb-a284-8be8c4fa5bfc
 ## **Optimization: Final Testing**
 - Ensured **gameplay balance, playability, and overall stability**.
 
+
+---
+
+# **Ming Xu**
 ---
 
 ## Buff Duration

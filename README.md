@@ -157,9 +157,6 @@ The audio management system controls the background music in the game, **automat
 
   ---
 
-  # GameDevWithUnityGroupProject
-This is for COSC416/516
-
 # **Lucas Xu**
 
 ## **Implement: Ghost Implementation**

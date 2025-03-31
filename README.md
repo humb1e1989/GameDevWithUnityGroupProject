@@ -80,3 +80,23 @@ https://github.com/user-attachments/assets/1cefa2a1-aba2-48bb-a284-8be8c4fa5bfc
 ## **Optimization: Final Testing**
 - Ensured **gameplay balance, playability, and overall stability**.
 
+---
+
+## Buff Duration
+- Define and implement the duration of the buff.  
+- Ensure that the buff is properly applied and dissolved within the appropriate time.  
+- Balance the game difficulty and player experience.  
+
+## Player Character Textures and Animations
+- Choose a matching visual image for the player according to the theme of the game.  
+- Combine it with animation effects to provide players with a more realistic and attractive movement effect.  
+
+## Coin and Scoring System
+- Design the coin disappearance and scoring logic.  
+- Create a scoreboard UI that matches the game style to complement the basic rules of the game.  
+
+## Game Export & User Testing
+- Export and upload the game version multiple times during the development process for user testing.  
+- Optimize the project based on user feedback.  
+
+

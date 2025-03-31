@@ -89,18 +89,37 @@ https://github.com/user-attachments/assets/1cefa2a1-aba2-48bb-a284-8be8c4fa5bfc
 ## Buff Duration
 - Define and implement the duration of the buff.  
 - Ensure that the buff is properly applied and dissolved within the appropriate time.  
-- Balance the game difficulty and player experience.  
+- Balance the game difficulty and player experience.
+
+  
+
+https://github.com/user-attachments/assets/b83ff433-33b0-49da-8ea8-09465bac8df1
+
+
 
 ## Player Character Textures and Animations
 - Choose a matching visual image for the player according to the theme of the game.  
-- Combine it with animation effects to provide players with a more realistic and attractive movement effect.  
+- Combine it with animation effects to provide players with a more realistic and attractive movement effect.
 
+
+
+https://github.com/user-attachments/assets/203c4f23-efce-4ab1-ac8b-5e474f2a5f56
+
+
+  
 ## Coin and Scoring System
 - Design the coin disappearance and scoring logic.  
-- Create a scoreboard UI that matches the game style to complement the basic rules of the game.  
+- Create a scoreboard UI that matches the game style to complement the basic rules of the game.
+
+  
+
+https://github.com/user-attachments/assets/3592582a-919b-4612-bde0-544b81f99dca
+
+
 
 ## Game Export & User Testing
 - Export and upload the game version multiple times during the development process for user testing.  
 - Optimize the project based on user feedback.  
+
 
 

@@ -12,6 +12,7 @@ This project is a **3D version of a Pac-Man style chase game** 🏃‍♂️👻
 [Insert game demonstration video link here]
 
 The video demonstrates the following features:
+- Main Game Scene Contruction
 - Main menu interface and opening animation 🏠
 - Game introduction screen information display 📖
 - In-game health UI display ❤️
@@ -19,20 +20,23 @@ The video demonstrates the following features:
 - Pause menu usage ⏸️
 - Game over interface and options 🏁
 
-### 2.2 UI System 📱
+### 2.2 Main Scnee Construction
+Add Main Scene Construction Pics and Videos Here
+
+### 2.3 UI System 📱
 - **Main Menu Interface** 🏠: Entry point of the game, featuring an elegant opening animation
 - **Game Introduction Screen** 📖: Displays game background story and operation guidelines
 - **Pause Menu System** ⏸️: Allows players to pause the game and provides various options
 - **Game Over Interface** 🏁: Appears when the player dies, offering restart and exit options
 - **Health Display UI** ❤️: Intuitively shows the player's current health status
 
-### 2.3 Health System ❤️
+### 2.4 Health System ❤️
 - **Player Health Management** 💗: Manages player's health status and related effects
 - **Collision Damage Detection** 💥: Detects collisions with enemies and reduces health
 - **Damage Effects** ⚡: Implements invincibility time and visual feedback when injured
 - **Death Handling** ☠️: Game-ending procedure when health is depleted
 
-### 2.4 Audio System 🎵
+### 2.5 Audio Manager System 🎵
 - **Scene Music Switching** 🔄: Automatically switches background music based on different scenes
 - **Background Music Management** 🎼: Smooth transitions and volume control
 

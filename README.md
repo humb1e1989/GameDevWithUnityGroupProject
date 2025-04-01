@@ -38,13 +38,17 @@ https://github.com/user-attachments/assets/1c828c2a-1acf-489f-9ef2-54a4e387020c
 
 ### 2.3 UI System 📱
 - **Main Menu Interface** 🏠: Entry point of the game, featuring an elegant opening animation
-> The main menu serves as the entry point of the game, providing a clean and intuitive interface. It features a specially designed **opening animation** ✨ that creates an immersive atmosphere for players. Players can enter the game introduction screen by clicking the Play button and quit the game by clicking the EXIT Button.
+> The main menu provides a clean and intuitive interface. It features a code-based **opening animation** ✨. Players can enter the game introduction screen by clicking the **PLAY** button and quit the game by clicking the **EXIT** Button.
 
 **Interface Preview**:
-[Insert main menu interface screenshot here]
+
+
+
+https://github.com/user-attachments/assets/6ae4d816-3944-48c2-83f2-01c1ec33e7ac
+
 
 - **Pause Menu System** ⏸️: Allows players to pause the game and provides various options
-> The pause menu allows players to **pause the game at any time by pressing key 'P'** ⌛ during gameplay has Multi-functional menu options 📋. It provides options to continue the game, restart, view help, back to main menu and exi withc a Nested panel design (e.g. help and guide can be opened within the pause menu) 📑. The system controls the game's paused state through time scaling (Time Scale) while ensuring UI animations continue running.
+> The pause menu allows players to **pause the game at any time by pressing key 'P'** ⌛ during gameplay has Multi-functional menu options 📋. It provides options to continue the game, restart, view help, back to main menu and exit withc a Nested panel design (e.g. help and guide can be opened within the pause menu) 📑. The system controls the game's paused state through time scaling (Time Scale) while ensuring UI animations continue running.
 
 **Interface Preview**:
 [Insert main menu interface screenshot here]

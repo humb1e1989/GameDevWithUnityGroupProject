@@ -38,11 +38,9 @@ https://github.com/user-attachments/assets/1c828c2a-1acf-489f-9ef2-54a4e387020c
 
 ### 2.3 UI System 📱
 - **Main Menu Interface** 🏠: Entry point of the game, featuring an elegant opening animation
-> The main menu provides a clean and intuitive interface. It features a code-based **opening animation** ✨. Players can enter the game introduction screen by clicking the **PLAY** button and quit the game by clicking the **EXIT** Button.
+> The main menu provides a clean and intuitive interface. I implemented a code-based **opening animation** ✨. Players can enter the game introduction screen by clicking the **PLAY** button and quit the game by clicking the **EXIT** Button.
 
 **Interface Preview**:
-
-
 
 https://github.com/user-attachments/assets/6ae4d816-3944-48c2-83f2-01c1ec33e7ac
 

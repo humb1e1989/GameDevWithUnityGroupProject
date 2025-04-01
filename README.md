@@ -71,7 +71,7 @@ https://github.com/user-attachments/assets/db97ff5f-3361-4d31-9ba4-222537e1b721
 ### 2.4 Health System ❤️
 > The health system manages the player's survival status, including health display, consumption, and recovery mechanisms. When players collide with enemies, the system **reduces health and provides visual feedback** 💔, triggering the game-ending procedure when health is depleted.
 > Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/52aca0b14d125b5c753a16ed1b0e37890418e101 <br>
-> Link (Refining HP System): https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/90fad9468e7be5654d22ad4b43e1dbae1b504123 (Please note the refining commmit for UI and HP System is the same)
+> Link (Refining HP System): https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/90fad9468e7be5654d22ad4b43e1dbae1b504123 (Please note the refining commmit for UI and HP System is the same) <br>
 
 - **Player Health Management** 💗: Manages player's health status and related effects
 - **Health Display UI** ❤️: Intuitively shows the player's current health status

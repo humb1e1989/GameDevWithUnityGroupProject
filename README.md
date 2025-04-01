@@ -275,3 +275,31 @@ Separate the codes related to coins and put them in a separate file. Let the buf
 All related scenes should be added to the scene list in order (with the help of Lucas) 
 ### **4. When the game is running on the online platform, it reports useless information (solved)**
 Delete the unnecessary detection codes in the main menu, and uncheck the development build when exporting the game (with the help of Lucas and Iverson) 
+
+---
+# **Jinxi Hu**
+---
+## **Implement: min map system**
+### **Adjust the inheritance of the scene model**
+Adjust the inheritance of the scene model according to its height and divide it into multiple layers
+- commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/5e468239b0fb1da5faf01448594f8bd9b5991ff1
+### **Implement basic min map function**
+Added UI to show the minmap and made minmap change with player movement
+- commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/a06dbf34ee72fc794bcabb3621085ae8c27a9da0
+- commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/4d86ca95a092c1cdff694b77604e576ff1570dfb
+### **Implement switching between maps of different heights**
+Allows the map captured by the mini-map camera to automatically switch based on the layer the player is in
+- commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/65fc0d41ce7315a7d4b16fbefe173ba595ccd110
+### **Implement show objects in different layers**
+Write a script to change the layer of any objects so that they can auto change their layer based on the floor they are on. Then objects could be show on min map.
+- commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/5aa12ab3bdf87e4c1d48405bcfb1b04d8b1ef761
+### **Make min map UI looks better and provide a clear information of player position**
+Show the player's direction and position by a yellow arrow, change the shanp of min map UI to circle and add a frame for it.
+- commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/e3478f280f013752ff08b9829b2e23bf3963bbf3
+- commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/5a3e8f56fa4655afd2eccc838b912a8e8a8a5955
+---
+### **Vedio**
+
+https://github.com/user-attachments/assets/e875c6fe-95d0-4b96-b2f3-8fd6bb667a6c
+
+---

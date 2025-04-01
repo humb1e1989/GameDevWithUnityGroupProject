@@ -40,6 +40,8 @@ https://github.com/user-attachments/assets/1c828c2a-1acf-489f-9ef2-54a4e387020c
 ### 2.3 UI System 📱
 - **Main Menu Interface** 🏠: Entry point of the game, featuring an elegant opening animation
 > The main menu provides a clean and intuitive interface. I implemented a code-based **opening animation** ✨. Players can enter the game introduction screen by clicking the **PLAY** button and quit the game by clicking the **EXIT** Button.
+> Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/81f695781b20343e453f8a4b6f51462d64c37d7b
+> Link (Refining UI): https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/90fad9468e7be5654d22ad4b43e1dbae1b504123 
 
 **Interface Preview**:
 
@@ -68,15 +70,14 @@ https://github.com/user-attachments/assets/db97ff5f-3361-4d31-9ba4-222537e1b721
 
 ### 2.4 Health System ❤️
 > The health system manages the player's survival status, including health display, consumption, and recovery mechanisms. When players collide with enemies, the system **reduces health and provides visual feedback** 💔, triggering the game-ending procedure when health is depleted.
+> Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/52aca0b14d125b5c753a16ed1b0e37890418e101
+> Link (Refining HP System): https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/90fad9468e7be5654d22ad4b43e1dbae1b504123 (Please note the refining commmit for UI and HP System is the same)
 
 - **Player Health Management** 💗: Manages player's health status and related effects
 - **Health Display UI** ❤️: Intuitively shows the player's current health status
 - **Death Handling** ☠️: Game-ending procedure when health is depleted. Integration with the game over system 🔚
 
 **HP System Preview**:
-
-
-
 https://github.com/user-attachments/assets/c9d88d8a-d128-4146-b698-975933f161da
 
 

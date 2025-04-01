@@ -1,4 +1,8 @@
-# 3D Pac-Man Style Game - UI System and Health System Development Documentation 🎮
+# 3D Pac-Man Style Game
+
+---
+
+# UI System and Health System Development Documentation - Iverson Yuanm 🎮
 
 ## 1. Project Overview 🌟
 

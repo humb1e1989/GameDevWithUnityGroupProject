@@ -138,9 +138,10 @@ https://github.com/user-attachments/assets/81fa8842-2984-4e77-b39f-690d665e975c
 
 ---
 
-## **Implement: Initial UI Implementation**
-- **Menu UI** (already be replaced).  
-- **Help and Game Rules Interface** added.
+## **Implement: Initial UI Implementation (draft)**
+- **Menu UI** (already be replaced).
+- **start UI** (already be replaced).
+- **Help and Game Rules Interface** added on final project.
 
 
 https://github.com/user-attachments/assets/1cefa2a1-aba2-48bb-a284-8be8c4fa5bfc
@@ -158,8 +159,9 @@ https://github.com/user-attachments/assets/1cefa2a1-aba2-48bb-a284-8be8c4fa5bfc
 2. **Improved Coin UI** for better visibility.  
 3. **Placed buffs, ghosts, and coins**, refining the invisible wall buff’s path.  
 4. **Adjusted NavMesh pathfinding**, resolving walkable areas marked as non-walkable.  
-5. **Added Game Finish Menu** that triggers upon collecting **20 coins**.  
-6. **Fixed Bug**: **Coin count now resets upon restart after player death**.  
+5. **Added Game Finish Menu** that triggers upon collecting **20 coins**.
+6. **Added mouse restrictions and mouse hiding** functions
+7. **Fixed Bug**: **Coin count now resets upon restart after player death**.  
 
 ---
 

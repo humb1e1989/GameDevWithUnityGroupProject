@@ -40,7 +40,7 @@ https://github.com/user-attachments/assets/1c828c2a-1acf-489f-9ef2-54a4e387020c
 ### 2.3 UI System 📱
 - **Main Menu Interface** 🏠: Entry point of the game, featuring an elegant opening animation
 > The main menu provides a clean and intuitive interface. I implemented a code-based **opening animation** ✨. Players can enter the game introduction screen by clicking the **PLAY** button and quit the game by clicking the **EXIT** Button.
-> Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/81f695781b20343e453f8a4b6f51462d64c37d7b
+> Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/81f695781b20343e453f8a4b6f51462d64c37d7b <br>
 > Link (Refining UI): https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/90fad9468e7be5654d22ad4b43e1dbae1b504123 
 
 **Interface Preview**:
@@ -70,7 +70,7 @@ https://github.com/user-attachments/assets/db97ff5f-3361-4d31-9ba4-222537e1b721
 
 ### 2.4 Health System ❤️
 > The health system manages the player's survival status, including health display, consumption, and recovery mechanisms. When players collide with enemies, the system **reduces health and provides visual feedback** 💔, triggering the game-ending procedure when health is depleted.
-> Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/52aca0b14d125b5c753a16ed1b0e37890418e101
+> Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/52aca0b14d125b5c753a16ed1b0e37890418e101 <br>
 > Link (Refining HP System): https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/90fad9468e7be5654d22ad4b43e1dbae1b504123 (Please note the refining commmit for UI and HP System is the same)
 
 - **Player Health Management** 💗: Manages player's health status and related effects
@@ -85,18 +85,17 @@ https://github.com/user-attachments/assets/c9d88d8a-d128-4146-b698-975933f161da
 ### 2.4 Damage System ❤️
 - **Collision Damage Detection** 💥: Detects collisions with enemies and reduces health
 - **Damage Effects** ⚡: Implements invincibility time and visual feedback when injured,__Screen red flash effect__ 🔴 when injured
-> When the player is grabbed by a ghost, he or she is immediately granted two seconds of invincibility, and the character will blink to visually cue this state. This feature gives the player the opportunity to escape from dangerous areas that
+> When the player is grabbed by a ghost, he or she is immediately granted two seconds of invincibility, and the character will blink to visually cue this state. This feature gives the player the opportunity to escape from dangerous areas that <br>
+> Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/52aca0b14d125b5c753a16ed1b0e37890418e101 (Please note the Damage system is finshed within the HP system)
 
 **Damage System Preview**:
-
-
-
 https://github.com/user-attachments/assets/af9388b7-7f41-4116-83a0-42e4680e0997
 
 
 ### 2.5 Audio Manager System 🎵
 - **Scene Music Switching**🔄 and **Music Management** 🎼 : Implemented a code-based automated management of multi-scene music systems. & The game switches background music based on different scenes with Fade-in Fade-out effect
-> The audio management system controls the background music in the game, **automatically switching music** 🔄 according to different scenes, and implementing smooth fade-in and fade-out transition effects. It has a singleton pattern ensuring a global unique instance 🔒 and Volume adjustment functionality 🔊
+> The audio management system controls the background music in the game, **automatically switching music** 🔄 according to different scenes, and implementing smooth fade-in and fade-out transition effects. It has a singleton pattern ensuring a global unique instance 🔒 and Volume adjustment functionality 🔊 <br>
+> Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/265f8dea1df8ead8e4a314135a591929146659fd
 
 **Audio Manager Demo Preview**:
 https://youtu.be/s0TWSKNhiB0

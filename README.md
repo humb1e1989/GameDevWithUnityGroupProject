@@ -231,10 +231,10 @@ https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/bdced65e17cbb1
 
 ## **Testing: Game Publishing & User Testing**
 ### **Game Publishing**
-- Exported and uploaded to itch.io multiple times to test whether there was any conflict
+- Exported and uploaded to itch.io to test whether there was any conflict
 - According to the running results of the online platform, make targeted adjustments in order to obtain the best game effect
 ### **User Testing**
-- Invite volunteers to play the game multiple times and collect feedback
+- Invite volunteers to play the game and collect feedback
 - According to the collected feedback, make targeted adjustments in order to provide the best game experience
 ### **Commit Link**
 https://itch.io/game/edit/3423849

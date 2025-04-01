@@ -58,7 +58,9 @@ https://github.com/user-attachments/assets/4afd6518-6b4f-4272-a34d-c0e753ced2c6
 > When the player's health reaches zero or collect 20 coins, the game over interface appears after a brief delay, providing game result feedback and allowing players to **restart or exit** 🔄 the game.
 
 **Interface Preview**:
-[Insert main menu interface screenshot here]
+
+https://github.com/user-attachments/assets/db97ff5f-3361-4d31-9ba4-222537e1b721
+
 
 - **UI System Refine and Scene Switching** ❤️: Intuitively shows the player's current health status
 > Implement the logic for the whole game scene switching (Mainmenu -> introduction -> MainGameScene (Demo_01.unity))

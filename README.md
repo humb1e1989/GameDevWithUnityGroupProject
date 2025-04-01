@@ -26,9 +26,7 @@ I implemented the following key elements based on the original _**Poly Horror Ma
 - Built two complex mazes, each with a unique layout that the player would need to navigate through
 - Designed a central haunted house with multiple rooms and floors that served as both a challenge and a refuge
 - Scattered collectibles Placement Location is reserved throughout the environment (visible as glowing dots in the image)
-- Strategic paths were planned to connect the different game areas
-- Dead trees were placed around the play area to enhance the eerie atmosphere
-- Created a foggy, moody environment to add tension to the game
+- Created a foggy, moody environment to add tension to the game by using the **Unity's Wind Zone Function**
 
 Details are showed as following:
 

@@ -30,8 +30,10 @@ I implemented the following key elements based on the original _**Poly Horror Ma
 
 Details are showed as following:
 
-**Interface Preview**:
-[Insert main menu interface screenshot here]
+**MainScene Overview**:
+
+https://github.com/user-attachments/assets/1c828c2a-1acf-489f-9ef2-54a4e387020c
+
 
 
 ### 2.3 UI System 📱

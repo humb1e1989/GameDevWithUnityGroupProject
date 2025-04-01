@@ -302,3 +302,13 @@ Show the player's direction and position by a yellow arrow, change the shanp of 
 https://github.com/user-attachments/assets/e875c6fe-95d0-4b96-b2f3-8fd6bb667a6c
 
 ---
+## **Optimize: Optimize the ghost tracking logic**
+### **Let ghost be paused for seconds after they touch player**
+Write a script for ghost which will lock its position if it collide with the player
+- commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/d5287cc1c93be80d8d9d9987c5066a52fd4ef51f
+### **Vedio**
+
+
+https://github.com/user-attachments/assets/18e71f0a-05e8-4ebe-b69f-8544d816417d
+
+---

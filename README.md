@@ -15,7 +15,7 @@ This project is a **3D version of a Pac-Man style chase game** 🏃‍♂️👻
 4. Damage handling from enemy collisions 💥
 5. Pause Game menu usage ⏸️
 6. Game over interface and options 🏁
-7. In Game Audio Control 
+7. In Game Audio Control  
 
 
 ### 2.2 Main Scnee Construction

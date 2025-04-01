@@ -49,7 +49,10 @@ https://github.com/user-attachments/assets/6ae4d816-3944-48c2-83f2-01c1ec33e7ac
 > The pause menu allows players to **pause the game at any time by pressing key 'P'** ⌛ during gameplay has Multi-functional menu options 📋. It provides options to continue the game, restart, view help, back to main menu and exit withc a Nested panel design (e.g. help and guide can be opened within the pause menu) 📑. The system controls the game's paused state through time scaling (Time Scale) while ensuring UI animations continue running.
 
 **Interface Preview**:
-[Insert main menu interface screenshot here]
+
+https://github.com/user-attachments/assets/4afd6518-6b4f-4272-a34d-c0e753ced2c6
+
+
 
 - **Game Completion Interface** 🏁: Appears when the player dies, the Game Over Interface offering restart and exit options, when collecting enough cois, the Winning Interface offer restart, back to main menu, and exit options
 > When the player's health reaches zero or collect 20 coins, the game over interface appears after a brief delay, providing game result feedback and allowing players to **restart or exit** 🔄 the game.

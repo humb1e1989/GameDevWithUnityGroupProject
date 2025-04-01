@@ -166,30 +166,40 @@ https://github.com/user-attachments/assets/1cefa2a1-aba2-48bb-a284-8be8c4fa5bfc
 # **Ming Xu**
 ---
 
-## Buff Duration
-- Define and implement the duration of the buff.  
-- Ensure that the buff is properly applied and dissolved within the appropriate time.  
-- Balance the game difficulty and player experience.
+## **Implement: Partial Buff Implementation**
+### **Increase Size Buff and UI**
+- The player's size is changed to 3 times of the original one, so as to cross some rugged places
+### **Decrease Size Buff and UI**
+- The player's image size is changed to 0.5 times of the original one, so as to pass through some small holes
+### **Dash**
+- The player's movement speed is changed to 3 times of the original one, so as to get rid of the ghost's pursuit
+### **Commit Link**
+https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/cf4f3180b251d2fc8f4ef73224f0437c2f825d97
 
-  
+
+
+## **Implement: Buff Duration**
+- Set the duration of size change buff and dash buff to 15 seconds
+- Ensure that the buff is properly applied and dissolved within the appropriate time
+- Balance the game difficulty and player experience
+### **Commit Link**
+https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/f5127888e3e2c635a72930423e5566daaa75a782
+
+
 
 https://github.com/user-attachments/assets/b83ff433-33b0-49da-8ea8-09465bac8df1
 
 
 
-## Player Character Textures and Animations
-- Choose a matching visual image for the player according to the theme of the game.  
-- Combine it with animation effects to provide players with a more realistic and attractive movement effect.
 
-
-
-https://github.com/user-attachments/assets/203c4f23-efce-4ab1-ac8b-5e474f2a5f56
-
-
-  
-## Coin and Scoring System
-- Design the coin disappearance and scoring logic.  
-- Create a scoreboard UI that matches the game style to complement the basic rules of the game.
+## **Implement: Coin and Scoring System**
+### **Coin**
+- Implement the coin disappear and scoring logic
+### **Scoring System**
+- Build an effective scoreboard UI
+- Matches the game style to complement the basic rules of the game
+### **Commit Link**
+https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/9eceb9b011e60f007c0a9e1e4d8b699c7cc9620d
 
   
 
@@ -197,10 +207,51 @@ https://github.com/user-attachments/assets/3592582a-919b-4612-bde0-544b81f99dca
 
 
 
-## Game Export & User Testing
-- Export and upload the game version multiple times during the development process for user testing.  
-- Optimize the project based on user feedback.  
+## **Optimization: Player Character and Animations**
+### **Player Character**
+- Using Lowpoly Cowboy RIO V1.1 to optimize the player's image
+- Choose a matching visual cowboy image for the player according to the theme of the game
+### **Player Animations**
+- Using Basic Motions FREE to implement player action animation
+- Provide players with a more realistic and attractive movement effect
+### **Commit Link**
+https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/5c156c23ebdd011ed1fef94086200b325aaa4e1e
 
 
 
+https://github.com/user-attachments/assets/203c4f23-efce-4ab1-ac8b-5e474f2a5f56
 
+
+
+## **Optimization: Scoreboard UI**
+- Import MISTERY ILAHI.otf to optimize the font display of scoreboard
+- Use horror-style fonts to unify the UI style of the game and enhance the immersion of the game
+### **Commit Link**
+https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/bdced65e17cbb1971760965a482116c7a3127037
+
+
+
+## **Testing: Game Publishing & User Testing**
+### **Game Publishing**
+- Exported and uploaded to itch.io to test whether there was any conflict
+- According to the running results of the online platform, make targeted adjustments in order to obtain the best game effect
+### **User Testing**
+- Invite volunteers to play the game and collect feedback
+- According to the collected feedback, make targeted adjustments in order to provide the best game experience
+### **Commit Link**
+https://itch.io/game/edit/3423849
+
+
+<img width="256" alt="Screenshot 2025-03-31 205644" src="https://github.com/user-attachments/assets/bac38575-cbe1-46fa-a373-06ff992a73d2" />
+
+
+
+## **Development Challenges**
+### **1. The buff removing mechanism can't work correctly after being destroyed (solved)**
+The method of implementing and removing is linked to the buff object, so that the effect of the buff can be removed correctly after the buff object is destroyed (with the help of Lucas) 
+### **2. Coins are set as a buff, and cannot be scored correctly (solved)**
+Separate the codes related to coins and put them in a separate file. Let the buff.cs file refer to the coin methods.
+### **3. After the game introduction animation is updated, the connection between the scenes is abnormal (solved)**
+All related scenes should be added to the scene list in order (with the help of Lucas) 
+### **4. When the game is running on the online platform, it reports useless information (solved)**
+Delete the unnecessary detection codes in the main menu, and uncheck the development build when exporting the game (with the help of Lucas and Iverson) 

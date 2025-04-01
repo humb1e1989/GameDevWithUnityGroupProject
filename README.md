@@ -96,8 +96,9 @@ https://github.com/user-attachments/assets/af9388b7-7f41-4116-83a0-42e4680e0997
 - **Scene Music Switching**🔄 and **Music Management** 🎼 : Implemented a code-based automated management of multi-scene music systems. & The game switches background music based on different scenes with Fade-in Fade-out effect
 > The audio management system controls the background music in the game, **automatically switching music** 🔄 according to different scenes, and implementing smooth fade-in and fade-out transition effects. It has a singleton pattern ensuring a global unique instance 🔒 and Volume adjustment functionality 🔊
 
-**Interface Preview**:
-[Insert health UI screenshot here]
+**Audio Manager Demo Preview**:
+https://youtu.be/s0TWSKNhiB0
+> Start 00:19 and you could feel the effect until 1:19 and later on
 
   ---
 

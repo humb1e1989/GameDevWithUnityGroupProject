@@ -89,7 +89,7 @@ https://github.com/user-attachments/assets/db97ff5f-3361-4d31-9ba4-222537e1b721
 > Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/52aca0b14d125b5c753a16ed1b0e37890418e101 (Please note the Damage system is finshed within the HP system)
 
 **Damage System Preview**:
-https://github.com/user-attachments/assets/af9388b7-7f41-4116-83a0-42e4680e0997
+<video src="https://github.com/user-attachments/assets/af9388b7-7f41-4116-83a0-42e4680e0997"></video>
 
 
 ### 2.5 Audio Manager System 🎵

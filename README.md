@@ -297,7 +297,6 @@ Write a script to change the layer of any objects so that they can auto change t
 Show the player's direction and position by a yellow arrow, change the shanp of min map UI to circle and add a frame for it.
 - commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/e3478f280f013752ff08b9829b2e23bf3963bbf3
 - commit link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/5a3e8f56fa4655afd2eccc838b912a8e8a8a5955
----
 ### **Vedio**
 
 https://github.com/user-attachments/assets/e875c6fe-95d0-4b96-b2f3-8fd6bb667a6c

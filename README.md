@@ -8,16 +8,14 @@ This project is a **3D version of a Pac-Man style chase game** 🏃‍♂️👻
 
 ## 2.1 Demonstration Video 🎬 (Iverson Yuan)
 
-[Insert game demonstration video link here]
-
-The video demonstrates the following features:
-- 1. Main Game Scene Contruction
-- 2. Main menu interface and Loading Animation 🏠
-- 3. In-game health system and UI display ❤️
-- 4. Damage handling from enemy collisions 💥
-- 5. Pause Game menu usage ⏸️
-- 6. Game over interface and options 🏁
-- 6. In Game Audio Control 
+ Implemented the following features:
+1. Main Game Scene Contruction
+2. Main menu interface and Loading Animation 🏠
+3. In-game health system and UI display ❤️
+4. Damage handling from enemy collisions 💥
+5. Pause Game menu usage ⏸️
+6. Game over interface and options 🏁
+7. In Game Audio Control 
 
 
 ### 2.2 Main Scnee Construction

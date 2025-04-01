@@ -2,7 +2,7 @@
 
 ---
 
-# UI System and Health System Development Documentation - Iverson Yuanm 🎮
+# UI System and Health System Development Documentation - Iverson Yuan 🎮
 
 ## 1. Project Overview 🌟
 

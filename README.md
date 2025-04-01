@@ -72,13 +72,24 @@ https://github.com/user-attachments/assets/db97ff5f-3361-4d31-9ba4-222537e1b721
 - **Health Display UI** ❤️: Intuitively shows the player's current health status
 - **Death Handling** ☠️: Game-ending procedure when health is depleted. Integration with the game over system 🔚
 
-**Interface Preview**:
-[Insert health UI screenshot here]
+**HP System Preview**:
+
+
+
+https://github.com/user-attachments/assets/c9d88d8a-d128-4146-b698-975933f161da
+
+
 
 ### 2.4 Damage System ❤️
 - **Collision Damage Detection** 💥: Detects collisions with enemies and reduces health
 - **Damage Effects** ⚡: Implements invincibility time and visual feedback when injured,__Screen red flash effect__ 🔴 when injured
- When the player is grabbed by a ghost, he or she is immediately granted two seconds of invincibility, and the character will blink to visually cue this state. This feature gives the player the opportunity to escape from dangerous areas that
+> When the player is grabbed by a ghost, he or she is immediately granted two seconds of invincibility, and the character will blink to visually cue this state. This feature gives the player the opportunity to escape from dangerous areas that
+
+**Damage System Preview**:
+
+
+
+https://github.com/user-attachments/assets/af9388b7-7f41-4116-83a0-42e4680e0997
 
 
 ### 2.5 Audio Manager System 🎵

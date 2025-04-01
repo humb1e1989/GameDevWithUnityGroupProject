@@ -78,7 +78,7 @@ https://github.com/user-attachments/assets/db97ff5f-3361-4d31-9ba4-222537e1b721
 - **Death Handling** ☠️: Game-ending procedure when health is depleted. Integration with the game over system 🔚
 
 **HP System Preview**:
-https://github.com/user-attachments/assets/c9d88d8a-d128-4146-b698-975933f161da
+<video src="https://github.com/user-attachments/assets/c9d88d8a-d128-4146-b698-975933f161da"></video>
 
 
 

@@ -19,7 +19,7 @@ This project is a **3D version of a Pac-Man style chase game** 🏃‍♂️👻
 
 
 ### 2.2 Main Scene Construction
-> The scenery for this 3D Pac-Man game combines classic maze elements with modern ambient design. Two maze structures with different asymmetrical layouts is placed and a multi-story haunted house is in the center of the map, all set in a mist-shrouded forest area.
+> The scenery for this 3D Pac-Man game combines classic maze elements with modern ambient design. Two maze structures with different asymmetrical layouts is placed and a multi-story haunted house is in the center of the map, all set in a mist-shrouded forest area. <br>
 > Link: https://github.com/humb1e1989/GameDevWithUnityGroupProject/commit/37bee2d5407c685d4d5de4eecc587eb240f4d5db 
 
 I implemented the following key elements based on the original _**Poly Horror Mansion Asset**_  in the scene:
